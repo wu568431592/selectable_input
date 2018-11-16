@@ -13,6 +13,7 @@
         <div class="right inputable_select">
             <div class="top">
                 <div class="search_box"></div>
+
             </div>
             <ul class="right_main">
             </ul>
@@ -26,11 +27,16 @@
         $('.search_box').selectable_input({
             input:function(data){
                 console.log(data)
-                var arr = []
+                var arr = [
+
+                ]
                 var len = parseInt(Math.random()*20+1)
                 if(len>10){
                     for(var i=0;i<len;i++){
-                        arr.push(parseInt(Math.random()*2000+1))
+                        arr.push({
+                            id:i,
+                            name:'汽车群——'+i,
+                        })
                     }
                 }
                 return arr  //此处需要返回一个数组

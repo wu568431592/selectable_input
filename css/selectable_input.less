@@ -23,7 +23,7 @@ ul{
     height:55px;
     >div{
       margin:0px 10px;
-      input{
+      input[type='text']{
         height: 35px;
         width: 220px;
         border: 1px solid #ddd;
@@ -74,12 +74,35 @@ ul{
         top:9px;
         right:10px;
       }
-      ul.downSelect{
+      div.down{
         background: #fff;
         display: none;
         position: absolute;
         top:35px;
         left:0px;
+        width:100%;
+        max-height:240px;
+        z-index: 10;
+        border:1px solid #ddd;
+        border-top:none;
+      }
+      div.checked{
+        border-top:1px solid #ddd;
+        line-height:30px;
+        position: absolute;
+        bottom:0px;
+        width:100%;
+        left:0px;
+        text-align: center;
+        background: #fff;
+        z-index: 10;
+        a{
+          text-decoration: none;
+          color:#24C79E;
+        }
+      }
+      ul.downSelect{
+        background: #fff;
         width:100%;
         max-height:240px;
         overflow-x: hidden;
@@ -103,6 +126,17 @@ ul{
             color:#999;
             text-align: center;
             font-size: 14px;
+          }
+          label{
+            width: 100%;
+            display: block;
+          }
+          input[type='checkbox']{
+            width:16px;
+            height:16px;
+            vertical-align: middle;
+            margin-top:-3px;
+            margin-right:5px;
           }
         }
       }

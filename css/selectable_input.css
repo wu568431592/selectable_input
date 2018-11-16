@@ -24,7 +24,7 @@ ul {
 .top > div {
   margin: 0px 10px;
 }
-.top > div input {
+.top > div input[type='text'] {
   height: 35px;
   width: 220px;
   border: 1px solid #ddd;
@@ -32,7 +32,7 @@ ul {
   padding: 0px 10px;
   outline: none;
 }
-.top > div input:focus {
+.top > div input[type='text']:focus {
   border: 1px solid #24C79E;
 }
 .top > div select {
@@ -75,12 +75,35 @@ ul {
   top: 9px;
   right: 10px;
 }
-.top .search_box ul.downSelect {
+.top .search_box div.down {
   background: #fff;
   display: none;
   position: absolute;
   top: 35px;
   left: 0px;
+  width: 100%;
+  max-height: 240px;
+  z-index: 10;
+  border: 1px solid #ddd;
+  border-top: none;
+}
+.top .search_box div.checked {
+  border-top: 1px solid #ddd;
+  line-height: 30px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  left: 0px;
+  text-align: center;
+  background: #fff;
+  z-index: 10;
+}
+.top .search_box div.checked a {
+  text-decoration: none;
+  color: #24C79E;
+}
+.top .search_box ul.downSelect {
+  background: #fff;
   width: 100%;
   max-height: 240px;
   overflow-x: hidden;
@@ -106,5 +129,16 @@ ul {
   color: #999;
   text-align: center;
   font-size: 14px;
+}
+.top .search_box ul.downSelect li label {
+  width: 100%;
+  display: block;
+}
+.top .search_box ul.downSelect li input[type='checkbox'] {
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-top: -3px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=selectable_input.css.map */

@@ -1,7 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5ca368b0-ac20-4a62-bad9-917b7f80a355" name="Default Changelist" comment="" />
+    <list default="true" id="5ca368b0-ac20-4a62-bad9-917b7f80a355" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/selectable_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/selectable_input.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/selectable_input.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/selectable_input.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/selectable_input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/selectable_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/selectable_input.html" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -60,26 +68,32 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="244" />
-          <entry key="js" value="985" />
-          <entry key="less" value="75" />
+          <entry key="html" value="283" />
+          <entry key="js" value="1854" />
+          <entry key="less" value="431" />
+          <entry key="md" value="79" />
+          <entry key="txt" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="244" />
-          <entry key="JavaScript" value="985" />
-          <entry key="Less" value="75" />
+          <entry key="HTML" value="285" />
+          <entry key="JavaScript" value="1852" />
+          <entry key="Less" value="431" />
+          <entry key="Markdown" value="79" />
+          <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
+          <entry key="md" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
+          <entry key="Markdown" value="1" />
         </counts>
       </usages-collector>
     </session>
@@ -87,28 +101,28 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/css/tree.less">
+        <entry file="file://$PROJECT_DIR$/css/selectable_input.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="780">
-              <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/selectable_input.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+            <state relative-caret-position="299">
+              <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/selectable_input.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="816">
+              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/selectable_input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="720">
-              <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="31" />
+            <state relative-caret-position="-855">
+              <caret line="48" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -127,14 +141,19 @@
       <find>downSelect_item</find>
     </findStrings>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/js/inputable_select.js" />
         <option value="$PROJECT_DIR$/inputable_select.html" />
-        <option value="$PROJECT_DIR$/js/selectable_input.js" />
         <option value="$PROJECT_DIR$/css/tree.less" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/css/selectable_input.less" />
         <option value="$PROJECT_DIR$/selectable_input.html" />
+        <option value="$PROJECT_DIR$/js/selectable_input.js" />
       </list>
     </option>
   </component>
@@ -149,6 +168,7 @@
     <option name="width" value="974" />
     <option name="height" value="1047" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -161,22 +181,6 @@
             <path>
               <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="tree.less" type="620a8d5e:NestingTreeNode" />
-            </path>
-            <path>
-              <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
-              <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -221,12 +225,20 @@
       <updated>1539769356799</updated>
       <workItem from="1539769359243" duration="1666000" />
       <workItem from="1541146463677" duration="2315000" />
-      <workItem from="1542349147299" duration="4523000" />
+      <workItem from="1542349147299" duration="8269000" />
     </task>
+    <task id="LOCAL-00001" summary="修改 readme">
+      <created>1542354968819</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1542354968819</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8504000" />
+    <option name="totallyTimeSpent" value="12250000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -243,7 +255,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -257,31 +269,45 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="修改 readme" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改 readme" />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/css/tree.css">
+    <entry file="file://$PROJECT_DIR$/css/selectable_input.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1530" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/inputable_select.html" />
-    <entry file="file://$PROJECT_DIR$/js/selectable_input.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="720">
-          <caret line="55" column="26" lean-forward="true" selection-start-line="55" selection-start-column="26" selection-end-line="55" selection-end-column="31" />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="60">
+            <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/tree.less">
+    <entry file="file://$PROJECT_DIR$/css/selectable_input.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="104" column="27" selection-start-line="104" selection-start-column="27" selection-end-line="104" selection-end-column="27" />
+        <state relative-caret-position="299">
+          <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/selectable_input.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="38" column="33" selection-start-line="38" selection-start-column="33" selection-end-line="38" selection-end-column="33" />
+        <state relative-caret-position="816">
+          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/selectable_input.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-855">
+          <caret line="48" selection-start-line="48" selection-end-line="48" />
         </state>
       </provider>
     </entry>
