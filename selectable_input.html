@@ -1,0 +1,46 @@
+<!doctype html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>selectable_input</title>
+    <link rel="stylesheet" href="css/selectable_input.css">
+</head>
+<body>
+    <div class="content">
+        <div class="right inputable_select">
+            <div class="top">
+                <div class="search_box"></div>
+            </div>
+            <ul class="right_main">
+            </ul>
+        </div>
+        <div class="footer">
+        </div>
+    </div>
+    <script src="js/jquery-2.2.1.min.js"></script>
+    <script src="js/selectable_input.js"></script>
+    <script>
+        $('.search_box').selectable_input({
+            input:function(data){
+                console.log(data)
+                var arr = []
+                var len = parseInt(Math.random()*20+1)
+                if(len>10){
+                    for(var i=0;i<len;i++){
+                        arr.push(parseInt(Math.random()*2000+1))
+                    }
+                }
+                return arr  //此处需要返回一个数组
+            },
+            select:function(data){
+                console.log(data)
+            },
+            multiple:true,
+            liClass:'downSelect_item'
+        });
+    </script>
+</body>
+</html>
