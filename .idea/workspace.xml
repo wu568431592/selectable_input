@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5ca368b0-ac20-4a62-bad9-917b7f80a355" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/selectable_input.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/selectable_input.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/selectable_input.less" beforeDir="false" afterPath="$PROJECT_DIR$/css/selectable_input.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/js/selectable_input.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/selectable_input.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/selectable_input.html" beforeDir="false" afterPath="$PROJECT_DIR$/selectable_input.html" afterDir="false" />
     </list>
@@ -61,39 +58,40 @@
     <session id="547208601">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.open.time.1" value="1" />
+          <entry key="project.closed" value="1" />
+          <entry key="project.open.time.1" value="3" />
           <entry key="project.open.time.3" value="1" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="283" />
-          <entry key="js" value="1854" />
+          <entry key="html" value="454" />
+          <entry key="js" value="1945" />
           <entry key="less" value="431" />
-          <entry key="md" value="79" />
-          <entry key="txt" value="9" />
+          <entry key="md" value="326" />
+          <entry key="txt" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="285" />
-          <entry key="JavaScript" value="1852" />
+          <entry key="HTML" value="456" />
+          <entry key="JavaScript" value="1948" />
           <entry key="Less" value="431" />
-          <entry key="Markdown" value="79" />
-          <entry key="PLAIN_TEXT" value="9" />
+          <entry key="Markdown" value="321" />
+          <entry key="PLAIN_TEXT" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="html" value="1" />
-          <entry key="md" value="1" />
+          <entry key="md" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="HTML" value="1" />
-          <entry key="Markdown" value="1" />
+          <entry key="Markdown" value="2" />
         </counts>
       </usages-collector>
     </session>
@@ -103,26 +101,38 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/selectable_input.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/selectable_input.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+            <state relative-caret-position="508">
+              <caret line="112" column="11" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/selectable_input.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/selectable_input.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-855">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
+            <state relative-caret-position="-90">
+              <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="450">
+                <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -150,10 +160,10 @@
         <option value="$PROJECT_DIR$/js/inputable_select.js" />
         <option value="$PROJECT_DIR$/inputable_select.html" />
         <option value="$PROJECT_DIR$/css/tree.less" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/css/selectable_input.less" />
-        <option value="$PROJECT_DIR$/selectable_input.html" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/js/selectable_input.js" />
+        <option value="$PROJECT_DIR$/selectable_input.html" />
       </list>
     </option>
   </component>
@@ -181,6 +191,16 @@
             <path>
               <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
               <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="inputable_select-master" type="b2602c69:ProjectViewProjectNode" />
+              <item name="inputable_select-master" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -225,7 +245,9 @@
       <updated>1539769356799</updated>
       <workItem from="1539769359243" duration="1666000" />
       <workItem from="1541146463677" duration="2315000" />
-      <workItem from="1542349147299" duration="8269000" />
+      <workItem from="1542349147299" duration="8832000" />
+      <workItem from="1542358899799" duration="748000" />
+      <workItem from="1542360637016" duration="1518000" />
     </task>
     <task id="LOCAL-00001" summary="修改 readme">
       <created>1542354968819</created>
@@ -234,17 +256,30 @@
       <option name="project" value="LOCAL" />
       <updated>1542354968819</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="新增了多选功能">
+      <created>1542358370293</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1542358370293</updated>
+    </task>
+    <task id="LOCAL-00003" summary="修改了部分bug">
+      <created>1542359603049</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1542359603049</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12250000" />
+    <option name="totallyTimeSpent" value="15079000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20706007" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.101685986" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -255,8 +290,8 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.329718" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32936078" />
+      <window_info active="true" anchor="bottom" id="Version Control" order="8" visible="true" weight="0.3264642" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.3286334" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -271,7 +306,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="修改 readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="修改 readme" />
+    <MESSAGE value="新增了多选功能" />
+    <MESSAGE value="修改了部分bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="修改了部分bug" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/css/selectable_input.css">
@@ -283,8 +320,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="60">
-            <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <first_editor relative-caret-position="450">
+            <caret line="36" column="34" selection-start-line="36" selection-start-column="34" selection-end-line="36" selection-end-column="34" />
           </first_editor>
           <second_editor />
         </state>
@@ -292,22 +329,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/selectable_input.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="112" column="11" lean-forward="true" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/selectable_input.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="45" column="26" lean-forward="true" selection-start-line="45" selection-start-column="26" selection-end-line="45" selection-end-column="26" />
+        <state relative-caret-position="508">
+          <caret line="112" column="11" selection-start-line="112" selection-start-column="11" selection-end-line="112" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/selectable_input.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-855">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
+        <state relative-caret-position="-90">
+          <caret line="49" column="45" selection-start-line="49" selection-start-column="45" selection-end-line="49" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/selectable_input.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
         </state>
       </provider>
     </entry>

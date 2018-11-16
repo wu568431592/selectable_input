@@ -50,7 +50,7 @@
                             if(opt.multiple && ele.find('.checked').length == 0 && data.length>0){
                                 ele.find('.down').append('<div class="checked"><a href="#">选好了</a></div>')
                             }
-                        },1000)
+                        }, opt.delay|| 1000)
                     } else {
                         ele.find('span').hide();
                         ele.find('.down').hide();
