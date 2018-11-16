@@ -36,7 +36,7 @@
                                     if(opt.multiple){
                                         html += '<li class="'+opt.liClass+'"><label><input type="checkbox" data-id="'+data[i].id+'">'+data[i].name+'</label></li>'
                                     }else{
-                                        html += '<li class="'+opt.liClass+'">'+data[i]+'</li>'
+                                        html += '<li class="'+opt.liClass+'"  data-id="'+data[i].id+'">'+data[i].name+'</li>'
                                     }
                                 }
                                 ele.find('.down ul').empty().append(html).css('padding-bottom','30px');
@@ -59,9 +59,11 @@
             }, 0)
         })
         ele.on('blur', 'input', function () {
-            if ($(this).attr('data-canclear') == 'true') {
-                $(this).val('')
-                ele.find('span').hide();
+            if(!opt.multiple){
+                if ($(this).attr('data-canclear') == 'true') {
+                    $(this).val('')
+                    ele.find('span').hide();
+                }
             }
         })
         $('body').on('click', function (e) {
@@ -77,7 +79,7 @@
                 var text = $(this).text();
                 ele.find('input').val(text).attr('data-canclear', false);
                 ele.find('span').show();
-                $(this).parent().hide();
+                $(this).parent().parent().hide();
                 opt.select(text)
             }
         })
@@ -94,6 +96,7 @@
                     name:$(list[i]).parent().text()
                 })
             }
+            ele.find('input[type="text"]').val('')
             opt.select(arr)
         })
     }

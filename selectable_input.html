@@ -11,8 +11,9 @@
 <body>
     <div class="content">
         <div class="right inputable_select">
+            <button class="new">new</button>
+            <button class="delete">delete</button>
             <div class="top">
-                <div class="search_box"></div>
 
             </div>
             <ul class="right_main">
@@ -24,29 +25,33 @@
     <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/selectable_input.js"></script>
     <script>
-        $('.search_box').selectable_input({
-            input:function(data){
-                console.log(data)
-                var arr = [
-
-                ]
-                var len = parseInt(Math.random()*20+1)
-                if(len>10){
-                    for(var i=0;i<len;i++){
-                        arr.push({
-                            id:i,
-                            name:'汽车群——'+i,
-                        })
+        $('button.new').on('click',function(){
+            $('.top').append('<div class="search_box"></div>')
+            $('.search_box').selectable_input({
+                input:function(data){
+                    console.log(data)
+                    var arr = []
+                    var len = parseInt(Math.random()*20+1)
+                    if(len>10){
+                        for(var i=0;i<len;i++){
+                            arr.push({
+                                id:i,
+                                name:'汽车群——'+i,
+                            })
+                        }
                     }
-                }
-                return arr  //此处需要返回一个数组
-            },
-            select:function(data){
-                console.log(data)
-            },
-            multiple:true,
-            liClass:'downSelect_item'
-        });
+                    return arr  //此处需要返回一个数组
+                },
+                select:function(data){
+                    console.log(data)
+                },
+                multiple:false,
+                liClass:'downSelect_item'
+            });
+        })
+        $('button.delete').on('click',function(){
+            $('.top').empty();
+        })
     </script>
 </body>
 </html>
