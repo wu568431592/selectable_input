@@ -16,15 +16,11 @@ body {
 ul {
   list-style: none;
 }
-.top {
-  width: 100%;
-  padding: 10px 20px;
-  height: 55px;
+.search_box {
+  position: relative;
+  width: 220px;
 }
-.top > div {
-  margin: 0px 10px;
-}
-.top > div input[type='text'] {
+.search_box input[type='text'] {
   height: 35px;
   width: 220px;
   border: 1px solid #ddd;
@@ -32,35 +28,10 @@ ul {
   padding: 0px 10px;
   outline: none;
 }
-.top > div input[type='text']:focus {
+.search_box input[type='text']:focus {
   border: 1px solid #24C79E;
 }
-.top > div select {
-  height: 35px;
-  width: 42px;
-  border: 1px solid #ddd;
-  border-radius: 2px;
-  outline: none;
-}
-.top > div > span.download {
-  width: 15px;
-  height: 15px;
-  margin: 10px auto;
-  display: block;
-  background: url("../images/download.png") no-repeat center;
-  background-size: cover;
-}
-.top .downLoad_box {
-  width: 35px;
-  height: 35px;
-  border: 1px solid #ddd;
-  border-radius: 17.5px;
-}
-.top .search_box {
-  position: relative;
-  width: 220px;
-}
-.top .search_box span {
+.search_box span {
   display: none;
   cursor: pointer;
   width: 16px;
@@ -75,7 +46,7 @@ ul {
   top: 9px;
   right: 10px;
 }
-.top .search_box div.down {
+.search_box div.down {
   background: #fff;
   display: none;
   position: absolute;
@@ -87,7 +58,7 @@ ul {
   border: 1px solid #ddd;
   border-top: none;
 }
-.top .search_box div.checked {
+.search_box div.checked {
   border-top: 1px solid #ddd;
   line-height: 30px;
   position: absolute;
@@ -98,11 +69,11 @@ ul {
   background: #fff;
   z-index: 10;
 }
-.top .search_box div.checked a {
+.search_box div.checked a {
   text-decoration: none;
   color: #24C79E;
 }
-.top .search_box ul.downSelect {
+.search_box ul.downSelect {
   background: #fff;
   width: 100%;
   max-height: 240px;
@@ -112,7 +83,7 @@ ul {
   border: 1px solid #ddd;
   border-top: none;
 }
-.top .search_box ul.downSelect li {
+.search_box ul.downSelect li {
   height: 30px;
   line-height: 30px;
   cursor: pointer;
@@ -121,20 +92,20 @@ ul {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.top .search_box ul.downSelect li:hover {
+.search_box ul.downSelect li:hover {
   background: #eee;
 }
-.top .search_box ul.downSelect li.nodata {
+.search_box ul.downSelect li.nodata {
   background: #eee;
   color: #999;
   text-align: center;
   font-size: 14px;
 }
-.top .search_box ul.downSelect li label {
+.search_box ul.downSelect li label {
   width: 100%;
   display: block;
 }
-.top .search_box ul.downSelect li input[type='checkbox'] {
+.search_box ul.downSelect li input[type='checkbox'] {
   width: 16px;
   height: 16px;
   vertical-align: middle;

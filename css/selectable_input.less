@@ -17,128 +17,99 @@ body{
 ul{
   list-style: none;
 }
-.top {
-    width: 100%;
-    padding: 10px 20px;
-    height:55px;
-    >div{
-      margin:0px 10px;
-      input[type='text']{
-        height: 35px;
-        width: 220px;
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        padding: 0px 10px;
-        outline: none;
-        &:focus {
-          border: 1px solid #24C79E;
-        }
+.search_box{
+  position: relative;
+  width:220px;
+  input[type='text']{
+    height: 35px;
+    width: 220px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 0px 10px;
+    outline: none;
+    &:focus {
+      border: 1px solid #24C79E;
+    }
+  }
+  span{
+    display: none;
+    cursor: pointer;
+    width:16px;
+    height:16px;
+    border-radius: 10px;
+    background: #666;
+    color:#fff;
+    text-align: center;
+    line-height: 13px;
+    font-size: 12px;
+    position: absolute;
+    top:9px;
+    right:10px;
+  }
+  div.down{
+    background: #fff;
+    display: none;
+    position: absolute;
+    top:35px;
+    left:0px;
+    width:100%;
+    max-height:240px;
+    z-index: 10;
+    border:1px solid #ddd;
+    border-top:none;
+  }
+  div.checked{
+    border-top:1px solid #ddd;
+    line-height:30px;
+    position: absolute;
+    bottom:0px;
+    width:100%;
+    left:0px;
+    text-align: center;
+    background: #fff;
+    z-index: 10;
+    a{
+      text-decoration: none;
+      color:#24C79E;
+    }
+  }
+  ul.downSelect{
+    background: #fff;
+    width:100%;
+    max-height:240px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 10;
+    border:1px solid #ddd;
+    border-top:none;
+    li{
+      height:30px;
+      line-height: 30px;
+      cursor: pointer;
+      padding:0px 10px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      &:hover{
+        background: #eee;
       }
-      select{
-        height: 35px;
-        width: 42px;
-        border: 1px solid #ddd;
-        border-radius: 2px;
-        outline: none;
+      &.nodata{
+        background: #eee;
+        color:#999;
+        text-align: center;
+        font-size: 14px;
       }
-      >span.download{
-        width:15px;
-        height:15px;
-        margin:10px auto;
+      label{
+        width: 100%;
         display: block;
-        background: url("../images/download.png") no-repeat center;
-        background-size: cover;
       }
-    }
-    .downLoad_box{
-      width:35px;
-      height:35px;
-      border:1px solid #ddd;
-      border-radius: 17.5px;
-    }
-    .search_box{
-      position: relative;
-      width:220px;
-      span{
-        display: none;
-        cursor: pointer;
+      input[type='checkbox']{
         width:16px;
         height:16px;
-        border-radius: 10px;
-        background: #666;
-        color:#fff;
-        text-align: center;
-        line-height: 13px;
-        font-size: 12px;
-        position: absolute;
-        top:9px;
-        right:10px;
-      }
-      div.down{
-        background: #fff;
-        display: none;
-        position: absolute;
-        top:35px;
-        left:0px;
-        width:100%;
-        max-height:240px;
-        z-index: 10;
-        border:1px solid #ddd;
-        border-top:none;
-      }
-      div.checked{
-        border-top:1px solid #ddd;
-        line-height:30px;
-        position: absolute;
-        bottom:0px;
-        width:100%;
-        left:0px;
-        text-align: center;
-        background: #fff;
-        z-index: 10;
-        a{
-          text-decoration: none;
-          color:#24C79E;
-        }
-      }
-      ul.downSelect{
-        background: #fff;
-        width:100%;
-        max-height:240px;
-        overflow-x: hidden;
-        overflow-y: auto;
-        z-index: 10;
-        border:1px solid #ddd;
-        border-top:none;
-        li{
-          height:30px;
-          line-height: 30px;
-          cursor: pointer;
-          padding:0px 10px;
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          &:hover{
-            background: #eee;
-          }
-          &.nodata{
-            background: #eee;
-            color:#999;
-            text-align: center;
-            font-size: 14px;
-          }
-          label{
-            width: 100%;
-            display: block;
-          }
-          input[type='checkbox']{
-            width:16px;
-            height:16px;
-            vertical-align: middle;
-            margin-top:-3px;
-            margin-right:5px;
-          }
-        }
+        vertical-align: middle;
+        margin-top:-3px;
+        margin-right:5px;
       }
     }
   }
+}
