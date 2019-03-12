@@ -1,13 +1,17 @@
 (function ($) {
     $.fn.selectable_input = function (opt) {
+        var old_search_data = null
+        var placeholder = opt.placeholder || '请输入相关的问句';
+        var submitText = opt.submitText || '选好了';
         var ele = $(this)
         function init() {
-            var html = '<input type="text" placeholder="请输入相关的问句" data-canclear="true">\n' +
+            var html = '<input type="text" placeholder="' + placeholder + '" data-canclear="true">\n' +
                 '       <span>x</span>\n' +
                 '<div class="down">'+
                 '       <ul class="downSelect">\n' +
                 '       </ul></div>\n'
-            ele.append(html)
+            ele.append(html);
+            ele.addClass('search_box')
         }
         init()
         var canSearch = true;
@@ -29,27 +33,34 @@
                         var data = ''
                         clearTimeout(timer);
                         timer = setTimeout(function(){
-                            data = opt.input($(that).val())
-                            var html = ''
-                            if(data.length>0){
-                                for(var i = 0; i<data.length; i++){
-                                    if(opt.multiple){
-                                        html += '<li class="'+opt.liClass+'"><label><input type="checkbox" data-id="'+data[i].id+'">'+data[i].name+'</label></li>'
-                                    }else{
-                                        html += '<li class="'+opt.liClass+'"  data-id="'+data[i].id+'">'+data[i].name+'</li>'
+                            var callback = function(data){
+                                old_search_data = data;
+                                var html = ''
+                                if(data.length>0){
+                                    for(var i = 0; i<data.length; i++){
+                                        if(opt.multiple){
+                                            if(data[i].checked){
+                                                html += '<li class="'+opt.liClass+'"><label><input type="checkbox" data-id="'+data[i].id+'" checked>'+data[i].name+'</label></li>'
+                                            }else{
+                                                html += '<li class="'+opt.liClass+'"><label><input type="checkbox" data-id="'+data[i].id+'">'+data[i].name+'</label></li>'
+                                            }
+                                        }else{
+                                            html += '<li class="'+opt.liClass+'"  data-id="'+data[i].id+'">'+data[i].name+'</li>'
+                                        }
                                     }
+                                    ele.find('.down ul').empty().append(html).css('padding-bottom','30px');
+                                    ele.find('.down').show();
+                                }else{
+                                    html += '<li class="nodata">暂无数据</li>'
+                                    ele.find('.checked').remove()
+                                    ele.find('.down ul').empty().append(html).css('padding-bottom','0px');
+                                    ele.find('.down').show();
                                 }
-                                ele.find('.down ul').empty().append(html).css('padding-bottom','30px');
-                                ele.find('.down').show();
-                            }else{
-                                html += '<li class="nodata">暂无数据</li>'
-                                ele.find('.checked').remove()
-                                ele.find('.down ul').empty().append(html).css('padding-bottom','0px');
-                                ele.find('.down').show();
+                                if(opt.multiple && ele.find('.checked').length == 0 && data.length>0){
+                                    ele.find('.down').append('<div class="checked"><a href="#">' + submitText + '</a></div>')
+                                }
                             }
-                            if(opt.multiple && ele.find('.checked').length == 0 && data.length>0){
-                                ele.find('.down').append('<div class="checked"><a href="#">选好了</a></div>')
-                            }
+                            opt.input($(that).val(),callback)
                         }, opt.delay|| 1000)
                     } else {
                         ele.find('span').hide();
@@ -69,7 +80,7 @@
         $('body').on('click', function (e) {
             e.stopPropagation();
             if (!$(e.target).hasClass(opt.liClass)) {
-                $('.down').hide();
+                ele.find('.down').hide();
             }
         })
         ele.on('click', '.'+ opt.liClass, function (e) {
@@ -97,7 +108,10 @@
                 })
             }
             ele.find('input[type="text"]').val('')
-            opt.select(arr)
+            var old_select_data = old_search_data.filter(function(item){
+                return item.checked
+            })
+            opt.select(arr,old_select_data)
         })
     }
 })(jQuery)

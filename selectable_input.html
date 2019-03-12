@@ -1,5 +1,5 @@
 <!doctype html>
-<html >
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -7,52 +7,55 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>selectable_input</title>
     <link rel="stylesheet" href="css/selectable_input.css">
+    <script src="js/selectable_input.js"></script>
 </head>
 <body>
-    <div class="content">
-        <div class="right inputable_select">
-            <button class="new">new</button>
-            <button class="delete">delete</button>
-            <div class="top">
+<div class="content">
+    <div class="right inputable_select">
+        <button class="new">new</button>
+        <button class="delete">delete</button>
+        <div class="top">
 
-            </div>
-            <ul class="right_main">
-            </ul>
         </div>
-        <div class="footer">
-        </div>
+        <ul class="right_main">
+        </ul>
     </div>
-    <script src="js/jquery-2.2.1.min.js"></script>
-    <script src="js/selectable_input.js"></script>
-    <script>
-        $('button.new').on('click',function(){
-            $('.top').append('<div class="search_box"></div>')
-            $('.search_box').selectable_input({
-                input:function(data){
-                    console.log(data)
-                    var arr = []
-                    var len = parseInt(Math.random()*20+1)
-                    if(len>10){
-                        for(var i=0;i<len;i++){
-                            arr.push({
-                                id:i,
-                                name:'汽车群——'+i,
-                            })
-                        }
+    <div class="footer">
+    </div>
+</div>
+<script src="js/jquery-2.2.1.min.js"></script>
+<script src="js/selectable_input.js"></script>
+<script>
+    $('button.new').on('click', function () {
+        $('.top').append('<div class="search_box" id="search_box"></div>')
+        $('#search_box').selectable_input({
+            input: function (data, callback) {
+                console.log(data)
+                var arr = []
+                var len = parseInt(Math.random() * 20 + 1)
+                if (len > 10) {
+                    for (var i = 0; i < len; i++) {
+                        arr.push({
+                            id: i,
+                            name: '汽车群——' + i,
+                        })
                     }
-                    return arr  //此处需要返回一个数组
-                },
-                select:function(data){
-                    console.log(data)
-                },
-                multiple:true,
-                liClass:'downSelect_item',
-                delay:1000,
-            });
-        })
-        $('button.delete').on('click',function(){
-            $('.top').empty();
-        })
-    </script>
+                }
+                setTimeout(function () {
+                    return callback(arr)
+                }, 500)
+            },
+            select: function (data) {
+                console.log(data)
+            },
+            multiple: true,
+            liClass: 'downSelect_item',
+            delay: 1000,
+        });
+    })
+    $('button.delete').on('click', function () {
+        $('.top').empty();
+    })
+</script>
 </body>
 </html>
