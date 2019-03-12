@@ -35,5 +35,6 @@
                 multiple: true,
                 liClass: 'downSelect_item',
                 delay: 1000,
+                placeholder:"请选择用户识别码类型"
             });
 ```
